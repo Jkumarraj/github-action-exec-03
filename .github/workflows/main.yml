@@ -27,6 +27,7 @@ jobs:
       
   secondJob:
     runs-on: ubuntu-latest
+    needs: firstJob
     steps:
       - name: secondJob script
         shell: bash
